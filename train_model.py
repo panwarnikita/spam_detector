@@ -4,6 +4,7 @@ from sklearn.naive_bayes import MultinomialNB
 import pickle
 
 data = pd.read_csv("spam.csv", encoding="latin-1")
+# print(data)
 
 data = data[['v1', 'v2']]
 data.columns = ['label', 'message']
